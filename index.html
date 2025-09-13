@@ -1,0 +1,606 @@
+<!DOCTYPE html><html class="no-js" lang="tr-TR"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title></title>
+    
+
+    <meta name="author" content="CODBT">
+    <meta name="description" content="">
+    <meta name="keywords" content="TMOK - Türkiye Milli Olimpiyat Komitesi">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:image" content="images/tmok_og.jpg">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://olimpiyat.org.tr/">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="css/app.min.css">-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/magnific-popup.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/lightbox.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/universal-parallax.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/flag-icons.min.css">
+    <link rel="stylesheet" href="css/sport-icon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/tui-time-picker.css">
+    <link rel="stylesheet" type="text/css" href="css/tui-date-picker.css">
+    <link rel="stylesheet" type="text/css" href="css/tui-calendar.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link rel="stylesheet" href="css/cookieconsent.css">
+
+    </head>
+
+<body>
+    <!--<div class="vs-cursor"></div>-->
+    <div class="preloader">
+        <!--		<button class="vs-btn preloaderCls">Cancel Preloader</button>-->
+        <div class="preloader-inner">
+            <div class="vs-loadholder">
+                <div class="vs-loader"><span class="loader-text"><img src="images/logo-icon.png"></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center"><button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo"><a href="index.php"><img src="images/logo-tr.png" alt="TMOK"></a></div> 
+            <div class="mobile-menu-social-media-container"></div>
+            <div class="vs-mobile-menu">
+
+                <form method="post" id="search-form-m" autocomplete="off" action="/Arama?q=">
+                    <div class="form-group">
+                        <input type="text" id="search-input-m" name="header-search" value="" placeholder="Ara" required="">
+                        <button type="submit" class="theme-btn"><span class="icon fal fa-search"></span></button>
+                    </div>
+                </form>
+                <script>
+                    document.getElementById('search-form-m').addEventListener('submit', function(e) {
+                        e.preventDefault();
+
+                        var searchInput = document.getElementById('search-input-m').value;
+
+                        //if page is english add &lang=en to the url
+                        if (window.location.href.indexOf('?lang=en') > -1) {
+                            window.location.href = '/Arama?s=' + searchInput + '&lang=en';
+                        } else {
+                            window.location.href = '/Arama?s=' + searchInput;
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="popup-search-box d-none d-lg-block"><button class="searchClose border-theme text-theme"><i class="fal fa-times"></i></button>
+        <form action="#" autocomplete="off"><input type="text" class="border-theme" placeholder="What are you looking for"> <button type="submit"><i class="fal fa-search"></i></button></form>
+    </div>
+
+    <header class="vs-header header-layout1">
+        <div class="sticky-wrapper">
+            <div class="sticky-active">
+                <div class="header-inner">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <div class="header-logo py-3 py-lg-0">
+                                    <a href="/" class="logo">
+                                        <img id="logoImg" class="logo-1 fade-in " src="images/logo-tr.png" alt="TMOK" style="display: block;">
+                                        <video id="logoVideo" class="logo-video" autoplay="" loop="" muted="" playsinline="" style="height: 125px; display: none;">
+                                            <source src="media/logo_anim_tmok.webm" type="video/webm">
+                                        </video>
+
+                                        <script>
+                                            document.addEventListener("DOMContentLoaded", function() {
+                                                var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+                                                if (isSafari) {
+                                                    document.getElementById('logoVideo').style.display = 'none';
+                                                    document.getElementById('logoImg').style.display = 'block';
+                                                }
+                                            });
+                                        </script>
+                                        <style>
+                                            #logoImg {
+                                                display: none;
+
+                                            }
+                                        </style>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <nav class="main-menu menu-style1 d-none d-lg-block">
+
+                                </nav>
+                                <button type="button" class="vs-menu-toggle d-inline-block d-lg-none"><i class="fas fa-bars"></i></button>
+                            </div>
+                            <div class="col-auto header-actions">
+                                <div class="header-search">
+                                    <form method="post" id="search-form" autocomplete="off" action="/Arama?q=">
+                                        <div class="form-group">
+                                            <input type="text" id="search-input" name="header-search" value="" placeholder="Ara" required="">
+                                            <button type="submit" class="theme-btn"><span class="icon fal fa-search"></span></button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <script>
+                                    document.getElementById('search-form').addEventListener('submit', function(e) {
+                                        e.preventDefault();
+
+                                        var searchInput = document.getElementById('search-input').value;
+
+                                        var langParam = window.location.href.indexOf('?lang=en') > -1 ? '&lang=en' : '';
+
+                                        window.location.href = '/Arama?s=' + searchInput + langParam;
+                                    });
+                                </script>
+
+                                <!-- <div class="header-button">
+                                    <button id="user_lang_tr" onclick="changeLang(event, 'tr')" class="">TR</button>
+                                    <button id="user_lang_en" onclick="changeLang(event, 'en')" class="">EN</button>
+                                </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- Pass the language variable to JavaScript -->
+<script>
+    const lang = 'tr';
+</script>
+<section class="slider-one">
+    <div id="slider-one__carousel" class="slider-one__carousel owl-carousel owl-theme" data-autoplayspeed="5000" data-autoplay-speed="5000">
+        <!-- Slider items will be loaded dynamically via JS -->
+    </div><!-- /.slider-one__carousel -->
+    <div class="slider-one__nav">
+        <a class="slider-one__nav-left slide-one__left-btn" href="#">
+            <i class="fal fa-long-arrow-up"></i>
+        </a>
+        <a class="slider-one__nav-right slide-one__right-btn" href="#">
+            <i class="fal fa-long-arrow-down"></i>
+        </a>
+    </div><!-- /.slider-two__nav -->
+
+    <div id="slider-one__social">
+        <div class="container">
+            <div class="slider-social">
+                <!-- Social links will be loaded dynamically via JS -->
+            </div>
+        </div>
+    </div>
+</section><!-- /.slider-one -->
+
+<section class="vs-features-wrap space">
+    <div class="parallax" data-bg-class="bg-ultra-light-1 bg-wave" data-parallax-image="img/shape/wave.png"></div>
+    <div class="container standart-container">
+        <div class="title-area text-center">
+            <h2 class="sec-title text-uppercase text-theme">
+                Oyunlar            </h2>
+        </div>
+
+        <div id="featured-olympiads-carousel" class="row justify-content-center gy-3 text-center swipe_tip" data-slide-show="3" data-lg-slide-show="3" data-sm-slide-show="2" data-arrows="true">
+            <!-- Featured Olympiad items loaded dynamically via JS -->
+        </div>
+    </div>
+</section>
+
+<section class="latest-release-wrapper bg-gray2 position-relative space-top space-bottom">
+    <div class="container standart-container">
+        <div class="title-area text-center">
+            <h2 class="sec-title text-theme">
+                Haberler            </h2>
+        </div>
+        <div id="featured-news-carousel" class="row swipe_tip" data-slide-show="3" data-ml-slide-show="2" data-lg-slide-show="3" data-arrows="true">
+            <!-- Featured News items loaded dynamically via JS -->
+        </div>
+        <div class="mt-4 text-center">
+            <a href="/Haberler" class="vs-btn outline small-btn">
+                Tüm Haberler            </a>
+        </div>
+    </div>
+</section>
+
+<div class="vs-brand-wrapper bg-gray4 space background-image" data-bg-src="img/shape/wave2.png">
+    <div class="container standart-container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-sm-10">
+                <div class="title-area text-center">
+                    <h2 class="sec-title text-uppercase text-theme">
+                        Faaliyetlerimiz                    </h2>
+                </div>
+                <div id="projects-carousel" class="row justify-content-center text-center swipe_tip" data-slide-show="5" data-md-slide-show="5" data-sm-slide-show="1" data-xs-slide-show="1" data-arrows="true">
+                    <!-- Projects carousel loaded dynamically via JS -->
+                </div>
+                <div class="mt-4 text-center">
+                    <a href="/Faaliyetlerimiz" class="vs-btn outline small-btn">
+                        Tüm Faaliyetlerimiz                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="vs-team-wrapper space-top space-extra-bottom z-index-common" style="background-color:#141a22 !important">
+    <div class="parallax athletes-parallax" data-bg-class="bg-theme" data-parallax-image="img/bg/man-jogging-road-with-sun.jpg"></div>
+    <div class="container standart-container z-index-common">
+        <div class="row">
+            <div class="col-lg-12 col-xl-12">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="/Sporcular">
+                            <h2 class="sec-title text-white">
+                                Sporcularımız                            </h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="row team-card_slider swipe_tip custom_arrows_1" id="featured-athletes-carousel" data-slide-show="4" data-lg-slide-show="3" data-sm-slide-show="2" data-arrows="true">
+                    <!-- Featured athletes loaded dynamically via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="vs-brand-wrapper space space-extra xxx-big-bottom bg-ultra-light-2">
+    <div class="container">
+        <div class="title-area text-center mb-0">
+            <h2 class="sec-title text-uppercase text-theme">
+                Sponsorlar            </h2>
+        </div>
+        <div id="sponsor-carousel" class="row justify-content-center text-center swipe_tip" data-slide-show="4" data-md-slide-show="4" data-sm-slide-show="4" data-xs-slide-show="2" data-arrows="true">
+            <!-- Sponsors loaded dynamically via JS -->
+        </div>
+        <div class="mobile-sponsor"></div>
+    </div>
+</div>
+
+<div class="vs-brand-wrapper xxxspace xxxspace-extra bg-ultra-light-2 mt-4 mb-0 pb-0">
+    <div class="container">
+        <img src="images/IOCSPO.jpg" class="img-fluid ioc_sponsors" style="width: 100%;height: 96px;object-fit: contain;object-position: center;position: relative;top: -60px;">
+        <script>
+            window.onresize = window.onload = function() {
+                document.querySelectorAll('img.ioc_sponsors').forEach(i => {
+                    if (window.innerWidth < 768) {
+                        i.src = 'img/IOCSPO2.jpg';
+                        i.classList.add('ioc_responsive');
+                    } else {
+                        i.src = 'https://olimpiyat.org.tr/images/IOCSPO.jpg';
+                        i.classList.remove('ioc_responsive');
+                    }
+                });
+            }
+        </script>
+    </div>
+</div>
+
+<div class="vs-brand-wrapper space space-extra xxx-big-bottom bg-ultra-light-2 mb-50" style="top: -70px; position: relative;">
+    <div class="container standart-container">
+        <div class="row">
+            <div class="col-md-4 col-sm-3">
+                <div class="text-left">
+                    <h2 class="sec-title-style3 link-title text-uppercase text-theme text-mini-center">
+                        Bağlantılar                    </h2>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-9">
+                <div id="links-carousel" class="row justify-content-center text-center swipe_tip" data-slide-show="5" data-md-slide-show="5" data-sm-slide-show="5" data-xs-slide-show="5" data-arrows="true">
+                    <!-- Links loaded dynamically via JS -->
+                </div>
+            </div>
+        </div>
+        <div class="mobile-links"></div>
+    </div>
+</div>
+
+<style>
+    .ioc_responsive {
+        height: unset !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: block;
+    }
+
+    .item.slider-one__slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 41.66vw;
+        position: relative;
+    }
+
+    .slider-one__slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .owl-stage-outer {
+        height: 41.66vw;
+    }
+
+    @media (max-width: 900px) {
+        .item.slider-one__slide {
+            height: 134vw;
+        }
+
+        .owl-stage-outer {
+            height: 134vw;
+        }
+
+        .h2,
+        h2 {
+            font-size: 40px;
+        }
+    }
+</style>
+
+<footer class="footer-wrapper footer-layout1">
+	<div class="widget-area">
+		<div class="parallax footer-parallax" data-bg-class="bg-theme" data-parallax-image="img/bg/footer-bg-1-1.jpg"></div>
+
+		<div class="newsletter-wrapper">
+			<div class="container">
+				<div class="footer-newsletter text-center text-lg-start">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-lg-12 mb-20">
+							<h2 class="text-white text-uppercase mb-4 mb-lg-0">Bizden Haberdar Olun</h2>
+						</div>
+						<div class="col-lg-12">
+							<form id="subscriber_form" action="#" class="newsletter-style1">
+								<div class="row">
+									<div class="col-xl-4 col-lg-3 col-sm-12 xcol-6">
+										<div class="form-group">
+											<input type="text" placeholder="Adınız" id="subscriber_name">
+											<i class="fal fa-long-arrow-down"></i>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-5 col-sm-12 xcol-6">
+										<div class="form-group">
+											<input type="text" placeholder="E-Posta Adresiniz" id="subscriber_email">
+											<i class="fal fa-long-arrow-down"></i>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-4">
+										<div class="form-group">
+											<button type="submit" class="newsletter-btn">Gönder</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container footer-container space-extra-top">
+			<div class="row justify-content-between">
+				<div class="col-md-4 col-xl-auto">
+					<div class="widget footer-widget">
+						<div class="vs-widget-about">
+							<div class="footer-logo">
+								<a href="index.php">
+									<img src="images/logo-tr.png" alt="TMOK">
+								</a>
+							</div>
+							<p class="footer-about-big-text">Olimpik değerlerle bütünleşen bir toplum için…</p>
+							<p class="footer-about-text">Türkiye Milli Olimpiyat Komitesi Resmi Sitesidir.</p>
+							<div class="multi-social">
+								<!-- Social icons can be added here -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xl-auto">
+					<div class="widget widget_categories footer-widget">
+						<h3 class="widget_title">TÜRKİYE MİLLİ OLİMPİYAT KOMİTESİ</h3>
+						<ul>
+							<li><a href="/Oyunlar">Olimpiyatlar</a></li>
+							<li><a href="/Faaliyetlerimiz">Faaliyetlerimiz</a></li>
+							<li><a href="/Haberler">Haberler</a></li>
+							<li><a href="/Galeri">Galeri</a></li>
+							<li><a href="/Hakkimizda">Hakkımızda</a></li>
+							<li><a href="/iletisim">İletişim</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-xl-auto">
+					<div class="widget footer-widget">
+						<h3 class="widget_title">İLETİŞİM</h3>
+						<div class="vs-widget-about">
+							<p class="footer-info"><i class="fas fa-map-marker-alt"></i>Olimpiyatevi 4. kısım sonu 34158 Ataköy, İstanbul</p>
+							<p class="footer-info"><i class="fas fa-at"></i><a href="/cdn-cgi/l/email-protection#771e19111837181b1e1a071e0e160359180510590305"><span class="__cf_email__" data-cfemail="1a73747c755a757673776a73637b6e3475687d346e68">[email protected]</span></a></p>
+							<p class="footer-info"><i class="fas fa-phone"></i><a href="tel:+902125600707">+90 212 560 07 07</a></p>
+							<p class="footer-info"><i class="fas fa-fax"></i><a href="tel:+902125600055">+90 212 560 00 55</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright-wrap text-center">
+		<div class="container">
+			<p>© Telif Hakkı 2025 <a class="text-white" href="/">TMOK</a>. Tüm hakları saklıdır.</p>
+		</div>
+
+		<div class="cm__footer">
+			<div class="cm__links">
+				<div class="cm__link-group footer_toc_group">
+					<a target="_blank" class="footer_toc" href="https://olimpiyat.org.tr/documents/TMOK_Cerez_Politikasi.pdf">Çerez Politikası</a>
+					<a target="_blank" class="footer_toc" href="https://olimpiyat.org.tr/tmok-gizlilik-ve-kisisel-verilerin-islenmesi-politikasi">Kişisel Verilerin Korunması</a>
+					<button class="footer_toc footer_toc_preferences" type="button" data-cc="show-preferencesModal">Çerez Tercihleri</button>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			.cm__btn-group.cm__btn-group--uneven {
+				justify-content: flex-start !important;
+				column-gap: 10px !important;
+			}
+
+			a.footer_toc {
+				color: white;
+				font-size: 12px;
+				margin: 0 10px;
+				opacity: 0.6;
+			}
+
+			a.footer_toc:hover {
+				opacity: 1;
+				text-decoration: underline;
+			}
+
+			.footer_toc_group {
+				margin-top: 10px;
+			}
+		</style>
+	</div>
+</footer>	<a href="#" class="scrollToTop scroll-btn"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+
+	<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.toast.min.js"></script>
+	<!--    <script src="js/app.min.js"></script>-->
+	<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	<script src="js/lightbox-plus-jquery.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		lightbox.option({
+			'hasVideo': true,
+			'disableScrolling': true,
+			'positionFromTop': 0
+		});
+	</script>
+	<script src="js/jquery.magnific-popup.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/imagesloaded.pkgd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/isotope.pkgd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+	<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js" integrity="sha512-LZ6YBzwuQvIG41twjliX3HUVeAd+ErnJ0UsqRnkI4firX2l71jxbKJoax/hu7XY2tiyLl0YA2kcnz/XEW+9O3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+	<script src="js/universal-parallax.min.js"></script>
+	<script src="js/vscustom-carousel.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/timezz.min.js"></script>
+	<script src="js/popper.min_1.js"></script>
+	<script src="js/tippy-bundle.umd.min.js"></script>
+
+	<!-- Include Required Prerequisites -->
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<!-- Include Date Range Picker -->
+	<script type="text/javascript" src="js/daterangepicker.js"></script>
+
+	<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+	<script src="js/ajax-mail.js"></script>
+	<script src="js/medal-carousel.js"></script>
+
+	<script src="js/bCrypt.js"></script>
+
+	<script src="js/service.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="js/timer.js"></script>
+	<script src="js/popup.js"></script>
+
+	<script src="js/cookieconsent.umd.js"></script>
+	<script src="js/cookieconsent-config.js"></script>
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-729L99X8F8"></script> -->
+	<!-- <script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-729L99X8F8');
+	</script> -->
+	<script>
+		// Function to check if the analytics category is accepted
+		function analyticsConsentAccepted() {
+	 
+			var consentCookie = document.cookie.split('; ').find(row => row.startsWith('cc_cookie='));
+			if (!consentCookie) return false;
+			try {
+	 
+				var consent = JSON.parse(decodeURIComponent(consentCookie.split('=')[1]));
+				return consent.categories && consent.categories.includes("analytics");
+			} catch (e) {
+				return false;
+			}
+		}
+
+		// Function to load Google Analytics if consent is given
+		function loadAnalytics() {
+			if (!analyticsConsentAccepted()) {
+				console.log("Analytics cookies not accepted. Google Analytics will not load.");
+				return;
+			}
+
+		 
+			var script = document.createElement('script');
+			script.src = "https://www.googletagmanager.com/gtag/js?id=G-729L99X8F8";
+			script.async = true;
+			document.head.appendChild(script);
+
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-729L99X8F8');
+		}
+
+		// On page load, check and load analytics if accepted
+		document.addEventListener("DOMContentLoaded", function() {
+			loadAnalytics();
+		});
+
+		// Listen for clicks on the Save Preferences button (adjust the selector as needed)
+		document.addEventListener('click', function(e) {
+ 			if (e.target.closest('.cc-save-preferences')) {
+ 				setTimeout(function() {
+					if (analyticsConsentAccepted()) {
+						loadAnalytics();
+					} else {
+						console.log("User did not consent to analytics.");
+ 					}
+				}, 100);
+			}
+		});
+	</script>
+
+<script>
+  if (window.location.protocol !== "https:") {
+    window.location.replace("https:" + window.location.href.substring(window.location.protocol.length));
+  }
+</script>
+
+	
+
+	
+
+</body></html>

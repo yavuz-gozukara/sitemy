@@ -1,0 +1,234 @@
+:root {
+    --icon-color: #ffffff;
+    --icon-hover-color: #08345F;
+}
+
+.sport-icon{
+/*	background-color: var(--theme-color);*/
+	margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    display: block;
+    transition: all ease .4s;
+}
+.sport-icon:hover{
+/*	background-color: var(--icon-hover-color);*/
+}
+
+
+
+
+.sport-icon.menu-olympiad-icon{
+    -webkit-mask-image: url("../images/menu-olympiad.svg");
+    mask-image: url("../images/menu-olympiad.svg");
+}
+
+.sport-icon.menu-news-icon{
+    -webkit-mask-image: url("../images/menu-news.svg");
+    mask-image: url("../images/menu-news.svg");
+}
+
+.sport-icon.menu-athletes-icon{
+    -webkit-mask-image: url("../images/menu-athletes.svg");
+    mask-image: url("../images/menu-athletes.svg");
+}
+
+.sport-icon.menu-sports-icon{
+    -webkit-mask-image: url("../images/menu-sports.svg");
+    mask-image: url("../images/menu-sports.svg");
+}
+
+.sport-icon.menu-venues-icon{
+    -webkit-mask-image: url("../images/menu-venues.svg");
+    mask-image: url("../images/menu-venues.svg");
+}
+
+.sport-icon.menu-medal-icon{
+    -webkit-mask-image: url("../images/menu-medal.svg");
+    mask-image: url("../images/menu-medal.svg");
+}
+
+.sport-icon.menu-result-icon{
+    -webkit-mask-image: url("../images/menu-result.svg");
+    mask-image: url("../images/menu-result.svg");
+}
+
+.sport-icon.menu-calendar-icon{
+    -webkit-mask-image: url("../images/menu-calendar.svg");
+    mask-image: url("../images/menu-calendar.svg");
+}
+
+
+
+.sport-icon.empty-icon{
+    -webkit-mask-image: url("../images/empty.svg");
+    mask-image: url("../images/empty.svg");
+}
+
+
+
+.sport-icon.archery-icon{
+    -webkit-mask-image: url("../images/archery.svg");
+    mask-image: url("../images/archery.svg");
+}
+
+.sport-icon.athleticism-icon{
+    -webkit-mask-image: url("../images/athleticism.svg");
+    mask-image: url("../images/athleticism.svg");
+}
+
+.sport-icon.artistic-gymnastic-icon{
+    -webkit-mask-image: url("../images/artistic-gymnastic.svg");
+    mask-image: url("../images/artistic-gymnastic.svg");
+}
+
+.sport-icon.badminton-icon{
+    -webkit-mask-image: url("../images/badminton.svg");
+    mask-image: url("../images/badminton.svg");
+}
+
+.sport-icon.baseball-icon{
+    -webkit-mask-image: url("../images/baseball.svg");
+    mask-image: url("../images/baseball.svg");
+}
+
+.sport-icon.basketball-icon{
+    -webkit-mask-image: url("../images/basketball.svg");
+    mask-image: url("../images/basketball.svg");
+}
+
+.sport-icon.boxing-icon{
+    -webkit-mask-image: url("../images/boxing.svg");
+    mask-image: url("../images/boxing.svg");
+}
+
+.sport-icon.canoe-icon{
+    -webkit-mask-image: url("../images/canoe.svg");
+    mask-image: url("../images/canoe.svg");
+}
+
+.sport-icon.climbing-icon{
+    -webkit-mask-image: url("../images/climbing.svg");
+    mask-image: url("../images/climbing.svg");
+}
+
+.sport-icon.curling-icon{
+    -webkit-mask-image: url("../images/curling.svg");
+    mask-image: url("../images/curling.svg");
+}
+
+.sport-icon.cycling-icon{
+    -webkit-mask-image: url("../images/cycling.svg");
+    mask-image: url("../images/cycling.svg");
+}
+
+.sport-icon.fencing-icon{
+    -webkit-mask-image: url("../images/fencing.svg");
+    mask-image: url("../images/fencing.svg");
+}
+
+.sport-icon.football-icon{
+    -webkit-mask-image: url("../images/football.svg");
+    mask-image: url("../images/football.svg");
+}
+
+.sport-icon.golf-icon{
+    -webkit-mask-image: url("../images/golf.svg");
+    mask-image: url("../images/golf.svg");
+}
+
+.sport-icon.halter-icon{
+    -webkit-mask-image: url("../images/halter.svg");
+    mask-image: url("../images/halter.svg");
+}
+
+.sport-icon.handball-icon{
+    -webkit-mask-image: url("../images/handball.svg");
+    mask-image: url("../images/handball.svg");
+}
+
+.sport-icon.hockey-icon{
+    -webkit-mask-image: url("../images/hockey.svg");
+    mask-image: url("../images/hockey.svg");
+}
+
+.sport-icon.ice-hockey-icon{
+    -webkit-mask-image: url("../images/ice-hockey.svg");
+    mask-image: url("../images/ice-hockey.svg");
+}
+
+.sport-icon.ice-skating-icon{
+    -webkit-mask-image: url("../images/ice-skating.svg");
+    mask-image: url("../images/ice-skating.svg");
+}
+
+.sport-icon.karate-icon{
+    -webkit-mask-image: url("../images/karate.svg");
+    mask-image: url("../images/karate.svg");
+}
+
+.sport-icon.modern-pentathlon-icon{
+    -webkit-mask-image: url("../images/modern-pentathlon.svg");
+    mask-image: url("../images/modern-pentathlon.svg");
+}
+
+.sport-icon.ping-pong-icon{
+    -webkit-mask-image: url("../images/ping-pong.svg");
+    mask-image: url("../images/ping-pong.svg");
+}
+
+.sport-icon.riding-icon{
+    -webkit-mask-image: url("../images/riding.svg");
+    mask-image: url("../images/riding.svg");
+}
+
+.sport-icon.sailing-icon{
+    -webkit-mask-image: url("../images/sailing.svg");
+    mask-image: url("../images/sailing.svg");
+}
+
+.sport-icon.shooting-icon{
+    -webkit-mask-image: url("../images/shooting.svg");
+    mask-image: url("../images/shooting.svg");
+}
+
+.sport-icon.skateboard-icon{
+    -webkit-mask-image: url("../images/skateboard.svg");
+    mask-image: url("../images/skateboard.svg");
+}
+
+.sport-icon.surfing-icon{
+    -webkit-mask-image: url("../images/surfing.svg");
+    mask-image: url("../images/surfing.svg");
+}
+
+.sport-icon.swimming-icon{
+    -webkit-mask-image: url("../images/swimming.svg");
+    mask-image: url("../images/swimming.svg");
+}
+
+.sport-icon.tennis-icon{
+    -webkit-mask-image: url("../images/tennis.svg");
+    mask-image: url("../images/tennis.svg");
+}
+
+.sport-icon.triathlon-icon{
+    -webkit-mask-image: url("../images/triathlon.svg");
+    mask-image: url("../images/triathlon.svg");
+}
+
+.sport-icon.volleyball-icon{
+    -webkit-mask-image: url("../images/volleyball.svg");
+    mask-image: url("../images/volleyball.svg");
+}
+
+.sport-icon.water-polo-icon{
+    -webkit-mask-image: url("../images/water-polo.svg");
+    mask-image: url("../images/water-polo.svg");
+}
+
+.sport-icon.wrestling-icon{
+    -webkit-mask-image: url("../images/wrestling.svg");
+    mask-image: url("../images/wrestling.svg");
+}

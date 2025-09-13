@@ -1,0 +1,225 @@
+@media (max-width: 1599.98px) {
+    .header-inner {
+        padding: 0 30px;
+    }
+    .header-logo img {
+        max-width: 150px;
+        max-width: 108px;
+    }
+    .menu-style1>ul>li {
+        margin: 0 15px
+    }
+    .main-menu a {
+        font-size: 17px;
+    }
+    .header-search {
+        max-width: 235px;
+    }
+    .footer-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .slider-one .item .container {
+        padding: 0 30px;
+    }
+    .news-detail-counter .countdown-item .time-block .time {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .news-detail-counter .countdown-item .timer {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .header-inner {
+        padding: 0;
+    }
+    form#search-form-m {
+        padding: 20px 0px 0px 19px;
+        bottom: 18px;
+        position: absolute;
+    }
+    input#search-input-m {
+        border: none;
+        padding: 0 10px;
+        line-height: 220%;
+        border-radius: 40px;
+    }
+    form#search-form-m button.theme-btn {
+        border: none;
+        height: 31px;
+        width: 32px;
+        border-radius: 100px;
+        margin-left: 6px;
+        background: #d7072a;
+    }
+    form#search-form-m button.theme-btn span {
+        color: white;
+        font-weight: 500;
+    }
+    .header-actions .header-search {
+        display: block;
+        /* left: 0; */
+        /* right: 0; */
+        /* margin: auto; */
+        /* position: absolute; */
+        /* width: fit-content; */
+        position: absolute;
+        right: -1px;
+        top: 37px;
+        /* right: calc(50vw - -10px); */
+        height: 36px;
+    }
+    .header-search span.icon.fal.fa-search {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .header-logo img {
+        max-width: 120px;
+    }
+    .main-menu a {
+        font-size: 16px;
+    }
+    .menu-style1>ul>li {
+        margin: 0 10px;
+    }
+    .newsletter-style1 .form-group {
+        margin-bottom: 25px;
+    }
+    .footer-newsletter {
+        margin-top: -280px;
+    }
+    .slider-one__title {
+        font-size: 72px;
+        line-height: 72px;
+    }
+    .player-info-page,
+    .team-info-page {
+        min-height: 100vh;
+        overflow: auto;
+    }
+    .player-info-page .team-player__photo img {
+        width: 40%;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+    }
+    .team-carousel__content>.slick-list {
+        padding-left: 0;
+        padding-top: 50px;
+        margin-top: 100px;
+    }
+    .team-carousel__content .slick-dots li {
+        margin-right: 0;
+    }
+    .player-info-detail * {
+        box-sizing: border-box;
+    }
+    .player-info-detail__body {
+        margin-bottom: 15px;
+    }
+    .player-olympic-info .player-info-detail .player-info-detail__title {
+        margin-bottom: 5px;
+    }
+    footer.footer-wrapper.footer-layout1 {
+        padding-top: 180px;
+    }
+    form#pagination-form {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header-actions .header-search,
+    .header-actions .external-logos {
+        display: none;
+    }
+    .vs-team-wrapper .sec-title {
+        font-size: 36px;
+        line-height: 48px;
+        margin: 0;
+    }
+    .footer-newsletter {
+        margin-top: -230px;
+    }
+    #slider-one__social .slider-social a {
+        display: none;
+    }
+    #slider-one__social .slider-social {
+        min-height: 88px;
+    }
+    .owl-dots::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .slider-one__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .slider-one__text p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .team-player {
+        display: none;
+    }
+    #canvas2 {
+        display: none;
+    }
+    #bigtext-id0 .bigtext-line0 {
+        font-size: 48px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    section.slider-one .item>.container {
+        margin-top: 100px;
+    }
+    .text-mini-center {
+        text-align: center;
+    }
+    .team-card {
+        height: 300px;
+    }
+}
+
+
+/* between 1200 and 1400 */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .game_page .stickysidebara {
+        display: block !important;
+        flex: unset !important;
+        width: 100%;
+    }
+    .game_page .parallax__container.bg-theme .parallax {
+        height: auto !important;
+        bottom: 0 !important;
+        top: 0 !important;
+    }
+    .vs-team-wrapper.game_page .olympiad-info {
+        margin: 40px 250px 0px 250px !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container.olicontainer {
+        margin-top: 20px;
+        margin-bottom: -100px;
+    }
+    .container.olicontainer.GameFiles {
+        margin-top: 30px;
+        margin-bottom: -40px;
+    }
+    .GameFiles ul#olympiad-docs {
+        margin-top: -12px;
+    }
+    section.vs-team-wrapper .parallax__container {
+        background-color: #202938 !important;
+    }
+}
